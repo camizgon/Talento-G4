@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FlexBox</title>
+    <style type="text/css">
+      .box {
+        background-color: blue;
+        display: flex;
+        flex-direction: row;/* ó column */
+        flex-wrap: wrap;  /* mas de una linea */
+        justify-content: center; /* todo el contenido */
+        align-items: center;  /*  cada item */
+      }
+
+      .box div {
+        width: 100px;
+        border: black solid 1px;
+        margin: 5px;
+      }
+
+      #one {
+        order: 4;
+        flex-grow: 1;
+      }
+
+      #two {
+        order: 3;
+      }
+
+      #three {
+        order: 1;
+      }
+
+      #four {
+        order: 2;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div id="one">One</div>
+      <div id="two">Two</div>
+      <div id="three">Three <br />has <br />extra <br />text</div>
+      <div id="four">Four <br />has <br />extra <br />text</div>
+    </div>
+  </body>
+</html>
