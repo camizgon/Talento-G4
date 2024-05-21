@@ -132,3 +132,8 @@ const dental = [
         prevision: 'ISAPRE'
     }
 ]
+
+
+console.table(radiologia);
+console.table(traumatologia);
+console.table(dental);
