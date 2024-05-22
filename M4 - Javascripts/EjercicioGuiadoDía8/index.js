@@ -1,10 +1,10 @@
 const radiologia = [
     {
-        hora: '11:00',
-        especialista: 'Ignacio Schulz',
-        paciente: 'Francisca Rojas',
-        rut: '9878782-1',
-        prevision: 'FONASA',
+        hora: '11:00', //posicion 0
+        especialista: 'Ignacio Schulz', //posicion 1
+        paciente: 'Francisca Rojas', //posicion 2
+        rut: '9878782-1', //posicion 3
+        prevision: 'FONASA', //posicion 4 
     },
     {
         hora: '11:30',
@@ -34,7 +34,11 @@ const radiologia = [
         rut: '14989389-k',
         prevision: 'FONASA',
     }
-]
+];
+
+const ResultadoPacientesRadiologia = document.getElementById('pacientesRadiologia');
+
+ResultadoPacientesRadiologia.innerHTML = ` Radiología : Primer paciente: ${radiologia[0].paciente} - ${radiologia[4].prevision} | Último paciente: ${radiologia[radiologia.length - 1].paciente} - ${radiologia[radiologia.length - 1].prevision}`;
 
 console.table(radiologia);
 
@@ -88,7 +92,13 @@ const traumatologia = [
         rut: '11254785-5',
         prevision: 'ISAPRE',
     }
-]
+];
+
+const resultadosPacientesTraumatologia = document.getElementById ('pacientesTraumatologia')
+
+resultadosPacientesTraumatologia.innerHTML = ` Traumatologia : Primer paciente: ${traumatologia[0].paciente} - ${traumatologia[4].prevision} | Último paciente: ${traumatologia[traumatologia.length - 1].paciente} - ${traumatologia[traumatologia.length - 1].prevision}`;
+
+
 
 console.table(traumatologia);
 
@@ -135,6 +145,10 @@ const dental = [
         rut: '14441281-0',
         prevision: 'ISAPRE'
     }
-]
+];
+
+const ResultadoPacientesDental = document.getElementById('pacientesDental');
+
+ResultadoPacientesDental.innerHTML = ` Dental : Primer paciente: ${dental[0].paciente} - ${dental[4].prevision} | Último paciente: ${dental[dental.length - 1].paciente} - ${dental[dental.length - 1].prevision}`;
 
 console.table(dental);
