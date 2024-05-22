@@ -36,6 +36,8 @@ const radiologia = [
     }
 ]
 
+console.table(radiologia);
+
 const traumatologia = [
     {
         hora: '8:00',
@@ -88,6 +90,8 @@ const traumatologia = [
     }
 ]
 
+console.table(traumatologia);
+
 const dental = [
     {
         hora: '8:30',
@@ -133,7 +137,4 @@ const dental = [
     }
 ]
 
-
-console.table(radiologia);
-console.table(traumatologia);
 console.table(dental);
