@@ -23,7 +23,7 @@ console.log(characters);
 //ACA SOMETO UN ARRAY Y POR CADA PERSONAJE MUESTRO EN PANTALLA UNA TARJETA (CON BUCLE FOR) EN EL HTML DEBO DECLARAR MIS ETIQUETAS MAIN Y DIV O SECTION con id ejemplo "cardSection" PARA LA CARD
 
 const cardSection = document.querySelector("#card-section");
-// aca recorro todo el array con forEch para no modificar
+// aca recorro todo el array con forEch para no modificar y que me sume un personaje al final 
 characters.forEach((character) => {
   let characterCard = `
   <div class="card p-2" style="width: 18rem;">
